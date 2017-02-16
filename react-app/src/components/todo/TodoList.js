@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TodoList = (props) =>{
+export const TodoList = (props) => {
   return (
     <div>ToDoList</div>
   )
