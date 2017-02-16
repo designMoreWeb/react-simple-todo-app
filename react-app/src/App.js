@@ -4,7 +4,7 @@ import './App.css';
 import {TodoForm, TodoList} from './components/todo'
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super()
     this.state={
       todos:[
@@ -16,7 +16,7 @@ class App extends Component {
     }
     this.handleInputChange=this.handleInputChange.bind(this)
   }
-  handleInputChange(evt){
+  handleInputChange(evt) {
     this.setState({
       currentTodo:evt.target.value
     })
