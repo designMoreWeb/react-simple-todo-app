@@ -6,19 +6,19 @@ import {TodoForm, TodoList} from './components/todo'
 class App extends Component {
   constructor() {
     super()
-    this.state={
-      todos:[
-        {id:1,name:'Learn JSX',isComplete:true},
-        {id:2,name:'Build an Awesome App',isComplete:false},
-        {id:3,name:'Ship It!',isComplete:false}
+    this.state = {
+      todos: [
+        {id: 1, name: 'Learn JSX', isComplete: true},
+        {id: 2, name: 'Build an Awesome App', isComplete: false},
+        {id: 3, name: 'Ship It!', isComplete: false}
       ],
-      currentTodo:''
+      currentTodo: ''
     }
-    this.handleInputChange=this.handleInputChange.bind(this)
+    this.handleInputChange = this.handleInputChange.bind(this)
   }
   handleInputChange(evt) {
     this.setState({
-      currentTodo:evt.target.value
+      currentTodo: evt.target.value
     })
   }
   render() {
