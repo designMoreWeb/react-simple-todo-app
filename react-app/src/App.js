@@ -55,7 +55,7 @@ class App extends Component {
           <h2>React Todo's</h2>
         </div>
           <div className="Todo-App">
-            {this.state.errorMessage && <span className ='error'>{this.state.errorMessage}</span>}
+            {this.state.errorMessage && <span className='error'>{this.state.errorMessage}</span>}
             <TodoForm handleInputChange={this.handleInputChange}
               currentTodo={this.state.currentTodo}
               handleSubmit={submitHandler}/>
