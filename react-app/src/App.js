@@ -31,16 +31,7 @@ class App extends Component {
           <div className="Todo-App">
             <TodoForm handleInputChange={this.handleInputChange}
               currentTodo={this.state.currentTodo}/>
-            <TodoList/>
-            <div className="Todo-List">
-              <ul>
-                {this.state.todos.map(todo =>
-                  <li key={todo.id}>
-                    <input type="checkbox" defaultChecked={todo.isComplete}/>
-                    {todo.name}
-                  </li>)}
-              </ul>
-            </div>
+            <TodoList todos={ this.state.todos }/>
           </div>
       </div>
     );
